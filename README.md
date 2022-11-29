@@ -12,7 +12,7 @@ to enable people to connect and collaborate on projects together.
 This is our MVP, so all you can do is search for projects by stack, and also post a project.
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](src/fonts_images/logo.png)
 
 ## Color Reference
 
