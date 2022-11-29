@@ -12,7 +12,7 @@ to enable people to connect and collaborate on projects together.
 This is our MVP, so all you can do is search for projects by stack, and also post a project.
 
 
-![Logo](src/fonts_images/logo.png)
+![Logo](src/fonts_images/wallpaper.png)
 
 ## Color Reference
 
