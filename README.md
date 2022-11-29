@@ -18,7 +18,7 @@ This is our MVP, so all you can do is search for projects by stack, and also pos
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Highlight Pink | ![#f36471](https://via.placeholder.com/10/f36471f?text=+) #f36471 |
+| Highlight Pink |#f36471 |
 | Neutral Pink | ![#f3a2a9](https://via.placeholder.com/10/f3a2a9?text=+) #f3a2a9|
 | Second HighLight Purple | ![#959ce8](https://via.placeholder.com/10/959ce8?text=+) #959ce8 |
 | Neutral White  | ![#fff7f8](https://via.placeholder.com/10/fff7f8?text=+) #fff7f8 |
