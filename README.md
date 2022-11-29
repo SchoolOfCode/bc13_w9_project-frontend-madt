@@ -30,7 +30,7 @@ This is our MVP, so all you can do is search for projects by stack, and also pos
 Clone the project
 
 ```bash
-  git clone https://github.com/edmundsamina/front-end-repository
+  git clone https://github.com/SchoolOfCode/bc13_w9_project-frontend-madt
 ```
 
 Go to the project directory
