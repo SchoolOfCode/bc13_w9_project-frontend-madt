@@ -41,7 +41,7 @@ export default function NewPost(props) {
 
     async function onClick(e){
         e.preventDefault()
-        let obj = {user_name:payload.name,title:payload.title,description:payload.description,stack:payload.stack}  
+        let obj = {user_name:payload.user_name,title:payload.title,description:payload.description,stack:payload.stack}  
         console.log('button clicked')
         await fetch("http://localhost:3001/api/post",{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
         body: JSON.stringify(obj)
