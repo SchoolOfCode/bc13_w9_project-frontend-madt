@@ -5,43 +5,43 @@ import {useState} from 'react'
 
 
 export default function NewPost(props) {
-    const [name,setName] = useState("")
-    const [title,setTitle]=useState("")
-    const [des,setDes]=useState("")
-    const [stack,setStack]=useState("")
-    // const [payload,setPayload]= useState({
-    //     user_name : null,
-    //     title : null ,
-    //     description : null, 
-    //     stack: null
+    // states all combined into one
+    // const [name,setName] = useState("")
+    // const [title,setTitle]=useState("")
+    // const [des,setDes]=useState("")
+    // const [stack,setStack]=useState("")
+    const [payload,setPayload]= useState({
+        user_name : null,
+        title : null ,
+        description : null, 
+        stack: null
     
-    // })
+    })
 
     function onChangeName(e){
         let text = e.target.value
-        setName(text)
+        setPayload({...payload, user_name: text})
 
     }
     function onChangeTitle(e){
         let text = e.target.value
-        setTitle(text)
+        setPayload({...payload, title: text})
+
     }
     function onChangeDes(e){
         let text = e.target.value 
-        setDes(text)
-
+        setPayload({...payload, description: text})
+  
     }
     function onChangeStack(e){
         let text = e.target.value
-        setStack(text)
+        setPayload({...payload, stack: text})
   
-    }
+    } 
 
     async function onClick(e){
         e.preventDefault()
-        let obj = {user_name:name,title:title,description:des,stack:stack}
-        // setPayload(obj)
-        
+        let obj = {user_name:payload.name,title:payload.title,description:payload.description,stack:payload.stack}  
         console.log('button clicked')
         await fetch("http://localhost:3001/api/post",{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
         body: JSON.stringify(obj)
